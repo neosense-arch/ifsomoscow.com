@@ -1,0 +1,3 @@
+ns_core:
+    resource: "@NSCoreBundle/Resources/config/core-routing.yml"
+    prefix:   /

@@ -1,0 +1,289 @@
+
+/* === Common tags ================================================================================================== */
+html, body {
+    height: 100%;
+}
+body {
+    background: #eee url(../images/bg.png);
+    color: #666;
+    font: 400 13px 'Ubuntu', sans-serif;
+}
+
+a {
+    color: #4d98cc;
+}
+a:hover {
+    color: #85c9d8;
+    text-decoration: none;
+}
+
+h1 {
+    color: #003768;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 0 25px 0;
+    text-transform: uppercase;
+}
+h2 {
+    color: #000;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 25px 0 0 0;
+}
+h3 {
+    color: #003768;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+li {
+    background: url(../images/ul.png) no-repeat left 5px;
+    padding-left: 10px;
+}
+
+p {
+    margin: 13px 0;
+}
+
+/* === Common classes =============================================================================================== */
+.inner {
+    border-top: solid 3px #deb406;
+}
+
+.container {
+    margin: 20px auto 0 auto;
+    width: 1000px;
+}
+
+/* === Header ======================================================================================================= */
+.header {
+    height: 91px;
+    position: relative;
+}
+.logo {
+    float:left;
+    height: 104px;
+    margin: -10px 16px 0 -5px;
+    width: 153px;
+}
+.logo img {
+    height: 104px;
+    width: 153px;
+}
+.banner {
+    color: #003768;
+    float: left;
+    font-size: 20px;
+    height: 81px;
+    padding: 10px 20px 0 84px;
+    width: 542px;
+}
+.lang {
+    padding: 0;
+    width: 36px;
+    position: absolute;
+    right: 0;
+}
+.lang li,
+.lang img {
+    height: 26px;
+    width: 36px;
+}
+.lang li {
+    background: none;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding: 0;
+}
+.lang .active {
+    box-shadow: 0 0 5px #00b2ec;
+}
+.lang img {
+    border: solid 1px #b7a9a9;
+}
+
+/* === Slider ======================================================================================================= */
+.if-slider {
+    height: 196px;
+    margin: 18px 0;
+    overflow: hidden;
+    width: 1000px;
+}
+.slider-image {
+    display: none;
+    width:1000px;
+}
+.if-slider .loader {
+    display: none;
+}
+
+/* === Menu ========================================================================================================= */
+.menu {
+    background: #a4bdcd url(../images/menu-bg.png);
+    /*padding: 0 8px;*/
+    height: 36px;
+}
+.menu a {
+    display: block;
+    border-left: solid 1px #cddbe4;
+    border-right: solid 1px #8caabe;
+    color: #333;
+    height: 16px;
+    padding: 10px 24px;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #fff;
+}
+.menu a:hover,
+.menu .hover > a {
+    background: #8fa9bc url(../images/menu-bg-hover.png);
+}
+.menu li:first-child a{
+    border-left: none;
+}
+.menu li:last-child a {
+    border-right: none;
+}
+.menu li {
+    background: none;
+    float: left;
+    padding: 0;
+}
+.menu li:first-child {
+    /*border-left: solid 1px #8caabe;*/
+}
+.menu .active,
+.menu .active a:hover {
+    background: #bed2dd url(../images/menu-bg-active.png);
+}
+.menu ul {
+    background: #fff;
+    border: solid 1px #dedede;
+    border-bottom: solid 9px #83a2b9;
+    overflow: hidden;
+    position: absolute;
+    visibility: hidden;
+    width: 198px;
+    z-index: 2;
+}
+.menu ul li a {
+    border: none;
+    border-bottom: dashed 1px #dedede;
+    white-space: nowrap;
+}
+.menu ul li a:hover {
+    background: #f8f8f8;
+}
+.menu ul li,
+.menu ul li:first-child {
+    border: none;
+    float: none;
+}
+.menu ul li:last-child a {
+    border: none;
+}
+
+/* === Content ====================================================================================================== */
+.content {
+    margin: 18px 0 0 0;
+    overflow: hidden;
+}
+
+.left, .right {
+    background: #fff;
+    float: left;
+    margin-bottom:  -100000px;
+    overflow: hidden;
+    padding: 18px 18px 100018px 18px;
+}
+.left {
+    width: 260px;
+}
+.right {
+    float: right;
+    margin-left: 16px;
+    width: 645px;
+}
+
+/* === Left ========================================================================================================= */
+.left h1 {
+    border-bottom: solid 1px #ccd7e1;
+    padding-bottom: 5px;
+}
+
+.organisation {
+    margin: 0 0 32px 0;
+}
+.organisation img {
+    display: block;
+    margin: 18px 0 0 0;
+}
+
+.dates {
+    margin: 0 0 32px 0;
+}
+.dates .item {
+    margin: 10px 0 0 0;
+}
+.dates .title {
+    color: #333;
+}
+
+/* === Right ======================================================================================================== */
+.image {
+    float: left;
+    margin: 0 18px 0 0;
+    width: 165px;
+}
+.image p {
+    color: #666;
+    font-size: 12px;
+    font-style: italic;
+    text-align: center;
+}
+
+/* === Footer ======================================================================================================= */
+.footer {
+    background: #657f8e url(../images/footer-bg.png);
+    color: #cbd2d7;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 16px;
+    margin: 18px 0 0 0;
+    overflow: hidden;
+    padding: 18px;
+}
+.footer h1 {
+    color: #fff;
+    font-size: 13px;
+}
+.footer a {
+    color: #ffd800;
+}
+
+.footer .contacts {
+    float: left;
+    width: 300px;
+}
+
+.footer .news {
+    float: left;
+    overflow: hidden;
+}
+.footer .news .item{
+    float: left;
+    margin-right: 15px;
+    width: 208px;
+}
+.footer .news .item:last-child {
+    margin-right: 0;
+}
+.footer .news .date {
+    color: #ffd800;
+}
+.footer .news p {
+    margin: 0;
+}

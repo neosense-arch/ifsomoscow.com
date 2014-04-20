@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{ page.title|default('IFSO 2016 Conference') }}</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link href="{{ asset('bundles/imfront/css/normalize.css') }}" rel="stylesheet">
+    <link href="{{ asset('bundles/imfront/css/style.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="inner">
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <a href="#">
+                    <img src="{{ asset('bundles/imfront/images/logo.png') }}" alt="IFSO 2016 Conference">
+                </a>
+            </div>
+            <div class="banner">
+                7TH CONGRESS OF THE INTERNATIONAL FEDERATION FOR THE SURGERY OF OBESITY AND METABOLIC DISORDERS, EUROPEAN CHAPTER
+            </div>
+            <ul class="lang">
+                <li class="active">
+                    <a href="#">
+                        <img src="{{ asset('bundles/imfront/images/lang-ru.png') }}">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="{{ asset('bundles/imfront/images/lang-en.png') }}">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="if-slider"></div>
+        <img src="{{ asset('bundles/imfront/pics/slider-01.jpg') }}" class="slider-image">
+        <img src="{{ asset('bundles/imfront/pics/slider-02.jpg') }}" class="slider-image">
+        <img src="{{ asset('bundles/imfront/pics/slider-03.jpg') }}" class="slider-image">
+        <img src="{{ asset('bundles/imfront/pics/slider-04.jpg') }}" class="slider-image">
+        <img src="{{ asset('bundles/imfront/pics/slider-05.jpg') }}" class="slider-image">
+
+        {# MENU AREA #}
+        {{ ns_cms_area(blocks, 'menu') }}
+
+        <div class="content">
+            <div class="left">
+                {# LEFT AREA #}
+                {{ ns_cms_area(blocks, 'left') }}
+            </div>
+            <div class="right">
+                {# CONTENT AREA #}
+                {{ ns_cms_area(blocks, 'content') }}
+            </div>
+        </div>
+
+        <div class="footer">
+            {# FOOTER AREA #}
+            {{ ns_cms_area(blocks, 'footer') }}
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="{{ asset('bundles/imfront/js/slider.js') }}"></script>
+<script type="text/javascript" src="{{ asset('bundles/imfront/js/script.js') }}"></script>
+</body>
+</html>

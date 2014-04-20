@@ -1,0 +1,14 @@
+<ul class="menu">
+    {% for item in menu.children if item.displayed %}
+        <li{% if matcher.isCurrent(item) or matcher.isAncestor(item) %} class="active"{% endif %}>
+            <a href="{{ item.uri }}">{{ item.label }}</a>
+            {% if item.hasChildren %}
+                <ul>
+                    {% for subitem in item.children if subitem.displayed %}
+                        <li><a href="{{ subitem.uri }}">{{ subitem.label }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>
