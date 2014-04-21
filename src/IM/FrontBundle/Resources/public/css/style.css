@@ -156,7 +156,7 @@ p {
     /*border-left: solid 1px #8caabe;*/
 }
 .menu .active,
-.menu .active a:hover {
+.menu .active > a:hover {
     background: #bed2dd url(../images/menu-bg-active.png);
 }
 .menu ul {
@@ -166,7 +166,8 @@ p {
     overflow: hidden;
     position: absolute;
     visibility: hidden;
-    width: 198px;
+    max-width: 280px;
+    min-width: 200px;
     z-index: 2;
 }
 .menu ul li a {
